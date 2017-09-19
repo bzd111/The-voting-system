@@ -25,7 +25,7 @@ SECRET_KEY = '(pjbools!%y1=noo-w7)4r4@8(&qb@$qu0_vc5_0y2md#=+fuj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.1.10.51', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['10.1.10.51', '127.0.0.1', 'localhost', '192.168.1.140']
 
 
 # Application definition
@@ -79,14 +79,14 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'vote',
         'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': '172.0.0.1',
+        'PASSWORD': 'xxxx',
+        'HOST': 'localhost',
         'PORT': '3306',
-        'OPTIONS': {
-            'charset': 'utf8',
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-            'sql_mode': 'traditional'
-        }
+        # 'OPTIONS': {
+            # 'charset': 'utf8',
+            # 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            # 'sql_mode': 'traditional'
+        # }
     }
 }
 

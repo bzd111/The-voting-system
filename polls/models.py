@@ -11,7 +11,8 @@ from django.utils.encoding import python_2_unicode_compatible
 @python_2_unicode_compatible
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField(u'出版时间', 'date publish')
+    pub_date = models.DateTimeField(u'创建时间')
+    # pub_date = models.DateTimeField('date published')
     auth = models.CharField(max_length=100, default="zxc")
 
     def __str__(self):
